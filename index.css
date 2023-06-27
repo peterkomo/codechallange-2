@@ -1,54 +1,42 @@
-
-header {
-    background-color: rgb(242, 242, 242);
-    padding: 20px;
-  }
-  
-  
-  header h1 {
+/* Styling for the h1 heading */
+h1 {
+    text-align: center;
     color: #333;
-    font-size: 24px;
-    margin: 0;
   }
   
+  /* Styling for the animal names */
+  .animalsss {
+    cursor: pointer;
+    color: #007bff;
+    margin: 10px;
+  }
   
-  h1 {
-    font-size: 36px;
+  .animalsss:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styling for the animal details container */
+  #allaboutanimals {
     margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
   }
   
-  
-  div {
-    margin-top: 20px;
-  }
-  
-
-  textarea {
-    width: 200px;
-    height: 100px;
+  #allaboutanimals p,
+  #allaboutanimals img {
     margin-bottom: 10px;
-    padding: 5px;
   }
   
-  
-  input[type="submit"],
-  button {
-    padding: 10px 20px;
-    background-color: #333;
+  #allaboutanimals button {
+    background-color: #007bff;
     color: #fff;
     border: none;
+    padding: 8px 16px;
     cursor: pointer;
-    margin-right: 10px;
   }
   
-  
-  button[type="reset"] {
-    background-color: #999;
-  }
-  
-  
-  img {
-    width: 400px;
-    height: auto;
+  #allaboutanimals button:hover {
+    background-color: #0056b3;
   }
   
