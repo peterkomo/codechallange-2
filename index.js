@@ -22,5 +22,16 @@ function getAnimalDetails(id) {
       .then((animals) => renderAnimalDetails(animals));// Call renderAnimalDetails with the parsed JSON data
   }
 document.addEventListener('DOMContentLoaded',function(){
-    
+const animalNames=document.querySelectorAll(`.allaboutanimals`)
+animalNames.forEach(function(name){
+    name.addEventListener('click',function(){
+        const id=name.dataset.id;
+        document.getElementById("allaboutanimals").innerHTML="";
+        getAnimalDetails(id)
+        //The code wraps the logic inside an event listener for the "DOMContentLoaded" event, which fires when the DOM  has been fully loaded and parsed.
+        //For each element, a click event listener is added using the addEventListener method. This sets up a callback function that will execute when the element is clicked.
+    })
+})
+
+
 })
