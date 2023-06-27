@@ -15,5 +15,9 @@ votesButton.addEventListener('click',function(){
     votesCount.textContent='votes${details.votes}'
 })
 
-        
-        
+
+function getAnimalDetails(id) {
+    fetch(`http://localhost:3000/characters/${id}`)
+      .then((response) => response.json())
+      .then((animals) => renderAnimalDetails(animals));
+  }
