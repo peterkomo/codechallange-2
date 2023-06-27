@@ -17,7 +17,10 @@ votesButton.addEventListener('click',function(){
 
 
 function getAnimalDetails(id) {
-    fetch(`http://localhost:3000/characters/${id}`)
-      .then((response) => response.json())
-      .then((animals) => renderAnimalDetails(animals));
+    fetch(`http://localhost:3000/characters/${id}`)//Send a GET request to fetch animal details based on the provided ID
+      .then((response) => response.json())// Parse the response as JSON
+      .then((animals) => renderAnimalDetails(animals));// Call renderAnimalDetails with the parsed JSON data
   }
+document.addEventListener('DOMContentLoaded',function(){
+    
+})
